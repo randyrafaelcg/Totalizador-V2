@@ -12,6 +12,7 @@ formT.addEventListener("submit", (event) => {
     document.getElementById('total').innerHTML = totalMult;
     document.getElementById('descuento').innerHTML = totaldes;
     document.getElementById('totalConImpuesto').innerHTML = totalConIm;
+    alert("Ud  igreso "+cantidad.value+" items, debara cancelar "+totalConIm +" \nGracias por usar el servicio");
 });
 
 function precioTotal(cantidad, precio) {
