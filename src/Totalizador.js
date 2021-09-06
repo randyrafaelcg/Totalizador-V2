@@ -5,11 +5,11 @@ const formT = document.querySelector("#totalizador-form");
 
 formT.addEventListener("submit", (event) => {
     event.preventDefault();
-    alert("Cantidad indtorucida: "+ cantidad.value + " Precio introducido: "+ precio.value);
-    //let totalMult = precioTotal(cantidad.value, precio.value);
+    //alert("Cantidad indtorucida: "+ cantidad.value + " Precio introducido: "+ precio.value);
+    let totalMult = precioTotal(cantidad.value, precio.value);
     //let totalConIm=ImpFORstate(state.value);
     //let totaldes= Descuento();
-    //document.getElementById('total').innerHTML = totalMult;
+    document.getElementById('total').innerHTML = totalMult;
     //document.getElementById('descuento').innerHTML = totaldes;
     //document.getElementById('totalConImpuesto').innerHTML = totalConIm;
 });
