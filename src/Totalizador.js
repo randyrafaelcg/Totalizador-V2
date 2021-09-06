@@ -1,16 +1,17 @@
-/*const cantidad = document.querySelector("#cantidad-input");
+const cantidad = document.querySelector("#cantidad-input");
 const precio = document.querySelector("#precio-input");
-const state = document.querySelector('#state');
+//const state = document.querySelector('#state');
 const formT = document.querySelector("#totalizador-form");
 
 formT.addEventListener("submit", (event) => {
     event.preventDefault();
-    let totalMult = precioTotal(cantidad.value, precio.value);
-    let totalConIm=ImpFORstate(state.value);
-    let totaldes= Descuento();
-    document.getElementById('total').innerHTML = totalMult;
-    document.getElementById('descuento').innerHTML = totaldes;
-    document.getElementById('totalConImpuesto').innerHTML = totalConIm;
+    alert("Cantidad indtorucida: "+ cantidad.value + " Precio introducido: "+ precio.value);
+    //let totalMult = precioTotal(cantidad.value, precio.value);
+    //let totalConIm=ImpFORstate(state.value);
+    //let totaldes= Descuento();
+    //document.getElementById('total').innerHTML = totalMult;
+    //document.getElementById('descuento').innerHTML = totaldes;
+    //document.getElementById('totalConImpuesto').innerHTML = totalConIm;
 });
 
 function precioTotal(cantidad, precio) {
@@ -18,7 +19,7 @@ function precioTotal(cantidad, precio) {
     return res;
 }
 
-function ImpFORstate(valueState) {
+/*function ImpFORstate(valueState) {
     let valorImpuestos=0;
     let res = precioTotal(cantidad.value, precio.value) - Descuento();
     switch (valueState) {
@@ -42,7 +43,8 @@ function ImpFORstate(valueState) {
     }
     res = res + (res * valorImpuestos);
     return res;
-}
+}*/
+
 function Descuento()
 {
     let valordescuento=0;
@@ -61,4 +63,4 @@ function Descuento()
                             valordescuento = 0.15;
     res = res * valordescuento;
     return res;
-}*/
+}

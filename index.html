@@ -7,7 +7,7 @@
 </head>
 
 <body>
-  <h1>Bienvenido al totalizador</h1>
+  <h1><p style="text-align:center">Bienvenido al totalizador</p></h1>
   <h1 id="HoraActual"></h1>
   <script type="text/javascript">
     showTime();
@@ -22,12 +22,12 @@
 
       if (seconds < 10) seconds = "0" + seconds;
 
-      $("#HoraActual").text(hours + ":" + minutes + ":" + seconds);
+      $("#HoraActual").text("Hora actual "+hours + ":" + minutes);
       setTimeout("showTime()", 1000);
     }
   </script>
 
-<!--  <div id="Totalizador">
+  <div id="Totalizador">
     <h1>TOTALIZADOR</h1>
     <form id="totalizador-form">
       <label for="cantidad-input">Cantidad:</label><br />
@@ -35,23 +35,23 @@
       <label for="precio-input">Precio:</label><br />
       <input type="number" id="precio-input" /><br />
       <div>
-        <select id="state">
+      <!--  <select id="state">
           <option value="UT">UT</option>
           <option value="NV">NV</option>
           <option value="TX">TX</option>
           <option value="AL">AL</option>
           <option value="CA">CA</option>
-        </select>
+        </select>-->
       </div>
       <br /><br />
       <input type="submit" value="Calcular" />
       
     </form>
-    <h2>Total: <p id="total"> </p></h2>
+    <!--<h2>Total: <p id="total"> </p></h2>
     <h2>Descuento: <p id="descuento"></p></h2>
-    <h2>Total Con Impuesto: <p id="totalConImpuesto"> </p></h2>
+    <h2>Total Con Impuesto: <p id="totalConImpuesto"> </p></h2>-->
   </div>
--->
+
   <script src="/src/index.js"></script>
 </body>
 
