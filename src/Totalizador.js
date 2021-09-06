@@ -1,6 +1,6 @@
 const cantidad = document.querySelector("#cantidad-input");
 const precio = document.querySelector("#precio-input");
-//const state = document.querySelector('#state');
+const state = document.querySelector('#state-input');
 const formT = document.querySelector("#totalizador-form");
 
 formT.addEventListener("submit", (event) => {
@@ -19,7 +19,7 @@ function precioTotal(cantidad, precio) {
     return res;
 }
 
-/*function ImpFORstate(valueState) {
+function ImpFORstate(valueState) {
     let valorImpuestos=0;
     let res = precioTotal(cantidad.value, precio.value) - Descuento();
     switch (valueState) {
@@ -43,7 +43,7 @@ function precioTotal(cantidad, precio) {
     }
     res = res + (res * valorImpuestos);
     return res;
-}*/
+}
 
 function Descuento()
 {
